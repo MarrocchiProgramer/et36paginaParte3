@@ -25,7 +25,8 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 
 #header {
     width: 100vw;
-    background-color: rgba(68, 118, 184,0.9);
+    background-color: rgba(94, 109, 189,0.5);
+    margin-top: 15px;
     box-shadow: black;
 }
 
@@ -96,6 +97,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     height: auto;
     border-top: 5px double black;
     background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
     /* ajusta la cantidad que se superponen el header y el main */
 
 }
@@ -154,7 +156,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 
 .social-links ul {
     list-style: none;
-    margin-left: 5px;
+    margin-left: 10px;
     padding: 0;
 }
 
@@ -206,7 +208,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     font-family: 'EB Garamond', serif;
     font-weight: bolder;
     color: white;
-    text-shadow: 0 0 10px #2E91E5, 0 0 20px #2E91E5, 0 0 30px #2E91E5, 0 0 40px #2E91E5, 0 0 70px #2E91E5, 0 0 80px #2E91E5, 0 0 100px #2E91E5, 0 0 150px #2E91E5;    
+
     margin: 40px;
     font-size: 60px;
 }
@@ -363,7 +365,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     max-width: 100%;
     flex-grow: 1;
     margin-top: 10px;
-    text-align: justify;
+    text-align: start;
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 30px;
