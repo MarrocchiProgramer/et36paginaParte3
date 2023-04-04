@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 #body {
     display: flex;
     flex-direction: column;
@@ -25,7 +26,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 
 #header {
     width: 100vw;
-    background-color: rgba(94, 109, 189,0.5);
+    background-color: rgba(94, 109, 189,0.8);
     margin-top: 15px;
     box-shadow: black;
 }
@@ -97,7 +98,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     height: auto;
     border-top: 5px double black;
     background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
     /* ajusta la cantidad que se superponen el header y el main */
 
 }
@@ -124,7 +125,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 
 .main-img-text {
     position: relative;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto', monospace;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     font-size: 25px;
     font-weight: 500;
@@ -138,12 +139,12 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 .main-img-text-span {
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     font-size: 100px;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto', monospace;
 }
 .main-img-text-span2{
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     font-size: 50px;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto', serif;
 }
 
 .social-links {
@@ -201,30 +202,36 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     background-color: #3A5794;
 }
 
-
-.main-title {
-    display: flex;
-    justify-content: center;
-    font-family: 'EB Garamond', serif;
-    font-weight: bolder;
-    color: white;
-
-    margin: 40px;
-    font-size: 60px;
-}
-
 .main-contenedor {
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
+.main-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', monospace;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    /* border: 1px solid #000000; */
+    background-color: rgba(94, 109, 189,0.8);
+    border-radius: 50px;
+    padding: 8px 17% 8px 17%;
+    margin: 40px;
+    font-size: 60px;
+}
+
+
+/* empieza ESPECIALIDADES */
+
 .especialidades {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     margin-bottom: 40px;
     filter: blur(2);
 
@@ -373,12 +380,24 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 }
 
 .click{
-    color: rgb(130, 130, 130);
-    font-weight: 500;
+    color:#999
 }
 
+/* termina INSTALACIONES */
 
+/* empieza INSCRIPCION */
 
+.inscripcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 500px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 20px;
+    margin: 20px 0px 40px 0px;
+}
 
 
 
