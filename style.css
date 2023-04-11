@@ -387,7 +387,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 
 /* empieza INSCRIPCION */
 
-.inscripcion{
+.materias{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -398,6 +398,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     padding-top: 20px;
     margin: 20px 0px 40px 0px;
 }
+
 
 
 
