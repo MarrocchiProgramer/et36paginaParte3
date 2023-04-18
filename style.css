@@ -21,6 +21,11 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     background-color: rgb(241, 239, 231);
 }
 
+.click{
+    color:#999
+}
+
+
 
 /* empieza el header */
 
@@ -210,6 +215,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 
 .main-title {
     display: flex;
+    flex-shrink: 2;
     justify-content: center;
     font-family: 'Roboto', monospace;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
@@ -220,7 +226,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     border-radius: 50px;
     padding: 8px 17% 8px 17%;
     margin: 40px;
-    font-size: 60px;
+    font-size: 3.7vw;
 }
 
 
@@ -252,6 +258,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     color: black;
     height: 800px;
     width: 600px;
+    flex-shrink: 1;
     margin-top: 20px;
     padding: 40px;
     border: 1px solid #999;
@@ -276,15 +283,16 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 }
 
 .esp-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 1;
     font-family: Georgia, serif;
     text-align: center;
     font-size: 40px;
     margin-bottom: 10px;
-    /* color: rgb(70, 114, 172) */
     color: black;
-    /* text-decoration: underline;
-    text-decoration-color: rgb(0, 0, 0);
-    text-decoration-thickness: 1px; */
 
 }
 
@@ -320,7 +328,11 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     border-radius: 4px;
 }
 
-.card-body:hover i ,.card-body:hover .card-title{
+.card-title{
+    font-size: 28px;
+}
+
+.card-body:hover i{
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 55px rgba(255, 255, 255, 0.5), 0 0 75px rgba(255, 255, 255, 0.5);
     animation: flicker 1s infinite alternate;
 }
@@ -334,7 +346,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 }
 
 .card2:hover {
-    background-color: rgb(164, 167, 193);
+    background-color: rgb(189, 238, 170);
     box-shadow:
     0px 8px 16px -4px rgba(0, 0, 0, 0.4),
     0px 8px 32px 0px rgba(0, 0, 0, 0.28),
@@ -342,7 +354,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 }
 
 .card3:hover {
-    background-color: rgb(196, 187, 249);
+    background-color: rgb(198, 160, 232);
     box-shadow:
     0px 8px 16px -4px rgba(0, 0, 0, 0.4),
     0px 8px 32px 0px rgba(0, 0, 0, 0.28),
@@ -350,7 +362,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 }
 
 .card4:hover {
-    background-color: rgb(148, 195, 237);
+    background-color: rgb(247, 255, 164);
     box-shadow:
     0px 8px 16px -4px rgba(0, 0, 0, 0.4),
     0px 8px 32px 0px rgba(0, 0, 0, 0.28),
@@ -373,15 +385,14 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     flex-grow: 1;
     margin-top: 10px;
     text-align: start;
+    border-top: 1px solid rgba(0, 0, 0, 0.27);
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 30px;
+    padding: 15px;
     font-weight: bold;
 }
 
-.click{
-    color:#999
-}
+
 
 /* termina INSTALACIONES */
 
@@ -389,17 +400,41 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 
 .inscripcion{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    height: 500px;
     border-top: 1px solid #e5e5e5;
     padding-top: 20px;
     margin: 20px 0px 40px 0px;
 }
 
+.inscripcion-card{
+    margin-left: 75px;
+}
 
+/* terminq INSCRIPCION */
+
+
+/* empieza MATERIAS */
+
+blockquote {
+    padding: 0px 10px 0px 10px;
+    border-left: 5px solid #ccc;
+    font-style: italic;
+  }
+  
+  blockquote p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  
+
+
+
+/* termina MATERIAS */
 
 
 /* termina el body */
