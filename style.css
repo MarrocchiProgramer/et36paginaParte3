@@ -398,7 +398,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 
 /* empieza INSCRIPCION */
 
-.inscripcion{
+.materias{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -435,6 +435,7 @@ blockquote {
 
 
 /* termina MATERIAS */
+
 
 
 /* termina el body */
