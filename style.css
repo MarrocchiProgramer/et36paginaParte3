@@ -17,13 +17,20 @@
     overflow-y: hidden;
 }
 
-h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selection{
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+p::selection {
     background-color: rgb(241, 239, 231);
 }
 
-.click{
-    color:#999
+.click {
+    color: #999
 }
+
+
 
 
 
@@ -31,7 +38,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 
 #header {
     width: 100vw;
-    background-color: rgba(94, 109, 189,0.8);
+    background-color: rgba(94, 109, 189, 0.8);
     margin-top: 15px;
     box-shadow: black;
 }
@@ -81,7 +88,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 
 
 .nav-link {
-    font-family: 'Roboto',monospace;
+    font-family: 'Roboto', monospace;
     font-size: 28px !important;
     /* text-shadow: 2px 2px 4px rgb(68, 118, 184);
     ; */
@@ -122,7 +129,8 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     background-position: center bottom;
     background-attachment: fixed;
 }
-.main-text-container{
+
+.main-text-container {
     display: flex;
     flex-direction: column;
     margin: 100px 0px 150px 0px;
@@ -131,7 +139,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 .main-img-text {
     position: relative;
     font-family: 'Roboto', monospace;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     font-size: 25px;
     font-weight: 500;
     color: rgb(255, 255, 255);
@@ -142,12 +150,13 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 }
 
 .main-img-text-span {
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     font-size: 100px;
     font-family: 'Roboto', monospace;
 }
-.main-img-text-span2{
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+
+.main-img-text-span2 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     font-size: 50px;
     font-family: 'Roboto', serif;
 }
@@ -218,11 +227,11 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     flex-shrink: 2;
     justify-content: center;
     font-family: 'Roboto', monospace;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     font-weight: 600;
     color: rgb(255, 255, 255);
     /* border: 1px solid #000000; */
-    background-color: rgba(94, 109, 189,0.8);
+    background-color: rgba(94, 109, 189, 0.8);
     border-radius: 50px;
     padding: 8px 17% 8px 17%;
     margin: 40px;
@@ -258,8 +267,10 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     color: black;
     height: 800px;
     width: 600px;
-    flex-shrink: 1;
-    margin-top: 20px;
+    transform: scale(0.85);
+    min-width: 500px;
+    object-fit: contain;
+    /* margin-top: 10px; */
     padding: 40px;
     border: 1px solid #999;
     border-radius: 5px;
@@ -280,6 +291,14 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
         0px 8px 16px -4px rgba(0, 0, 0, 0.4),
         0px 8px 32px 0px rgba(0, 0, 0, 0.28),
         0px 4px 24px 8px rgba(0, 0, 0, 0.24);
+}
+
+.div-esp:hover .esp-text{
+    color: white;
+}
+
+.div-esp:hover .esp-title{
+    color: white;
 }
 
 .esp-title {
@@ -320,6 +339,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     width: 500px;
     height: 500px;
     margin: 30px 20px 0px 20px;
+    transform: scale(0.8);
 }
 
 .card-body {
@@ -328,11 +348,11 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     border-radius: 4px;
 }
 
-.card-title{
+.card-title {
     font-size: 28px;
 }
 
-.card-body:hover i{
+.card-body:hover i {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 15px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 55px rgba(255, 255, 255, 0.5), 0 0 75px rgba(255, 255, 255, 0.5);
     animation: flicker 1s infinite alternate;
 }
@@ -340,33 +360,33 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 .card1:hover {
     background-color: rgb(156, 189, 232);
     box-shadow:
-    0px 8px 16px -4px rgba(0, 0, 0, 0.4),
-    0px 8px 32px 0px rgba(0, 0, 0, 0.28),
-    0px 4px 24px 8px rgba(0, 0, 0, 0.24);
+        0px 8px 16px -4px rgba(0, 0, 0, 0.4),
+        0px 8px 32px 0px rgba(0, 0, 0, 0.28),
+        0px 4px 24px 8px rgba(0, 0, 0, 0.24);
 }
 
 .card2:hover {
     background-color: rgb(189, 238, 170);
     box-shadow:
-    0px 8px 16px -4px rgba(0, 0, 0, 0.4),
-    0px 8px 32px 0px rgba(0, 0, 0, 0.28),
-    0px 4px 24px 8px rgba(0, 0, 0, 0.24);
+        0px 8px 16px -4px rgba(0, 0, 0, 0.4),
+        0px 8px 32px 0px rgba(0, 0, 0, 0.28),
+        0px 4px 24px 8px rgba(0, 0, 0, 0.24);
 }
 
 .card3:hover {
     background-color: rgb(198, 160, 232);
     box-shadow:
-    0px 8px 16px -4px rgba(0, 0, 0, 0.4),
-    0px 8px 32px 0px rgba(0, 0, 0, 0.28),
-    0px 4px 24px 8px rgba(0, 0, 0, 0.24);
+        0px 8px 16px -4px rgba(0, 0, 0, 0.4),
+        0px 8px 32px 0px rgba(0, 0, 0, 0.28),
+        0px 4px 24px 8px rgba(0, 0, 0, 0.24);
 }
 
 .card4:hover {
     background-color: rgb(247, 255, 164);
     box-shadow:
-    0px 8px 16px -4px rgba(0, 0, 0, 0.4),
-    0px 8px 32px 0px rgba(0, 0, 0, 0.28),
-    0px 4px 24px 8px rgba(0, 0, 0, 0.24);
+        0px 8px 16px -4px rgba(0, 0, 0, 0.4),
+        0px 8px 32px 0px rgba(0, 0, 0, 0.28),
+        0px 4px 24px 8px rgba(0, 0, 0, 0.24);
 }
 
 .card:hover {
@@ -396,9 +416,9 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
 
 /* termina INSTALACIONES */
 
-/* empieza INSCRIPCION */
+/* empieza MATERIAS */
 
-.materias{
+.materias {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -409,28 +429,23 @@ h1::selection,h2::selection,h3::selection,h4::selection,h5::selection,p::selecti
     margin: 20px 0px 40px 0px;
 }
 
-.inscripcion-card{
+.inscripcion-card {
     margin-left: 75px;
 }
-
-/* terminq INSCRIPCION */
-
-
-/* empieza MATERIAS */
 
 blockquote {
     padding: 0px 10px 0px 10px;
     border-left: 5px solid #ccc;
     font-style: italic;
-  }
-  
-  blockquote p {
+}
+
+blockquote p {
     margin: 0;
     font-size: 1.2rem;
     line-height: 1.5;
     font-weight: bold;
-  }
-  
+}
+
 
 
 
@@ -440,7 +455,69 @@ blockquote {
 
 /* termina el body */
 
+/* empieza PROYECTOS */
 
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 20px;
+    margin: 20px 0px 40px 0px;
+}
+
+
+.proyectos-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.12);
+    border: 1px solid #777;
+    border-radius: 10px;
+    transform: scale(0.7);
+    margin: 10px;
+    margin-top: -10rem;
+    box-shadow:
+        0px 8px 16px -4px rgba(156, 189, 232, 0.4),
+        0px 8px 32px 0px rgba(156, 189, 232, 0.28),
+        0px 4px 24px 8px rgba(156, 189, 232, 0.24);
+}
+
+
+.proyectos-title{
+    display: flex;
+    justify-content: center;
+    margin: 50px 30px 5px 30px;
+    padding: 1rem;;
+    font-size: 60px;
+    color: #7E8ACA;
+    border: 3px solid #3A5794;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.proyectos-descripcion{
+    color: #feda75;
+    font-size: 20px;
+    padding: 15px;
+    margin: 10px 30px 10px 30px;
+    border-left: 1px solid #fae4a9;
+    border-top: 1px solid #fae4a9;
+    border-bottom: 1px solid #fae4a9;
+    transform: scale(0.9);
+    text-align: justify;
+}
+
+.bxs-medal{
+    top: 0;
+    left: 0;
+}
+
+
+/* termina PROYECTOS */
 
 
 
@@ -456,22 +533,26 @@ blockquote {
 
 @keyframes flicker {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
-    25%{
+
+    25% {
         opacity: 0.95;
     }
-    50%{
+
+    50% {
         opacity: 0.9;
     }
-    75%{
+
+    75% {
         opacity: 0.85;
     }
+
     100% {
-      opacity: 0.8;
+        opacity: 0.8;
     }
-  }
-   
+}
+
 
 .text-focus-in {
     -webkit-animation: text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;

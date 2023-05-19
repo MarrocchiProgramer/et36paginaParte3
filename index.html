@@ -13,12 +13,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <script src="app.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
 
 <body>
@@ -91,14 +92,20 @@
               <i class='bx bx-code-alt'></i>
               <h3 class="esp-title">COMPUTACIÓN : </h3>
               <p class="esp-text">
-                El técnico en computación cuenta con el mayor grado de autonomía posible a la hora de enfrentar diferentes
+                El técnico en computación cuenta con el mayor grado de autonomía posible a la hora de enfrentar
+                diferentes
                 problemáticas en el futuro laboral y educativo.
-                Se trabajará en fomentar la capacidad de análisis de los problemas, abstracción de los elementos importantes
-                y descarte de los secundarios con espíritu crítico e iniciativa personal de manera que puedan encontrar las
+                Se trabajará en fomentar la capacidad de análisis de los problemas, abstracción de los elementos
+                importantes
+                y descarte de los secundarios con espíritu crítico e iniciativa personal de manera que puedan encontrar
+                las
                 mejores soluciones posibles a los mismos. Tanto en problemas simulados, como en la vida cotidiana.
-                Se fomentará el uso crítico de las herramientas, de manera que comprendan las ventajas y desventajas de cada
-                una a la hora de utilizarlas. Se buscará homogeneizar el énfasis en que las herramientas (por ejemplo los
-                lenguajes de programación, el uso de internet o los manuales técnicos) son variadas y no debe hacerse un uso
+                Se fomentará el uso crítico de las herramientas, de manera que comprendan las ventajas y desventajas de
+                cada
+                una a la hora de utilizarlas. Se buscará homogeneizar el énfasis en que las herramientas (por ejemplo
+                los
+                lenguajes de programación, el uso de internet o los manuales técnicos) son variadas y no debe hacerse un
+                uso
                 exclusivo de ellas, sino más bien complementario.
                 Se buscará educar en un sentido integral, enfocado en tres ejes principales:
                 <br>
@@ -108,10 +115,12 @@
                 <br>
                 ● La inserción en la educación superior
                 <br>
-                Desde nuestra Escuela será fundamental trabajar en equipo a fin de generar egresados que puedan tener las
+                Desde nuestra Escuela será fundamental trabajar en equipo a fin de generar egresados que puedan tener
+                las
                 capacidades necesarias adquiridas para una rápida inserción en el mundo laboral.
                 A su vez, nuestra prioridad será propiciar trabajos y valores que hagan hincapié en la responsabilidad
-                social que conlleva el uso y aplicación de los conocimientos adquiridos, buscando generar un egresado con un
+                social que conlleva el uso y aplicación de los conocimientos adquiridos, buscando generar un egresado
+                con un
                 perfil solidario y proactivo en la búsqueda de soluciones ante distintas problemáticas sociales y
                 ambientales.
               </p>
@@ -155,29 +164,34 @@
                 <br>
                 ● Asesorar técnicamente a terceros.
                 Además, el título de Maestro Mayor de obras, posee habilitaciones profesionales, que surgen como aquel
-                conjunto complejo de funciones profesionales que reflejan actividades que pudieren poner en riesgo de modo
+                conjunto complejo de funciones profesionales que reflejan actividades que pudieren poner en riesgo de
+                modo
                 directo la salud, la seguridad, los derechos o los bienes de los habitantes.
               </p>
             </div>
           </div>
-        </div>  
-      </div> 
+        </div>
+      </div>
     </section>
-
 
     <section class="instalaciones">
       <h2 class="main-title">NUESTRAS INSTALACIONES</h2>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div data-aos="fade-down-right">
-            <div class="card">
+            <div class="card" data-fancybox data-src="#myModal">
               <div class="card-body card1">
                 <i class='bx bxs-bowl-hot'></i>
                 <h5 class="card-title">Bufet</h5>
                 <p class="card-text">Contamos con este espacio para la venta de comidas hacia alumnos y profesores.</p>
-                <!-- <p class="card-text click">Cliquea para ver las fotos !!!</p> -->
+                <p class="card-text click">Cliquea para ver las fotos !!!</p>
               </div>
             </div>
+          </div>
+          <div id="myModal" style="display: none;">
+            <!-- Contenido del modal -->
+            <img src="img3.jpg" alt="Foto 1">
+            <img src="img4.jpg" alt="Foto 2">
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -194,7 +208,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div data-aos="fade-up-right">
             <div class="card">
@@ -222,7 +236,7 @@
       </div>
     </section>
 
-    <section class="inscripcion">
+    <section class="materias">
       <h2 class="main-title">MATERIAS</h2>
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -230,10 +244,11 @@
             <div class="card inscripcion-card">
               <div class="card-body card4">
                 <h5 class="card-title">Programacion Inicial</h5>
-                <p class="card-text text-materias"><blockquote>&ldquo;En programacion inicial los alumnos daran sus primeros 
-                  pasos en la computacion, podran comprender la logica y estructuracion detras de 
-                  la programacion, a traves de pseudocodigo como PseInt. Pasado un tiempo, los 
-                  alumnos comenzaran a usar lenguajes de alto nivel como Python o Java&ldquo;</blockquote> 
+                <p class="card-text text-materias">
+                <blockquote>&ldquo;En programacion inicial los alumnos daran sus primeros
+                  pasos en la computacion, podran comprender la logica y estructuracion detras de
+                  la programacion, a traves de pseudocodigo como PseInt. Pasado un tiempo, los
+                  alumnos comenzaran a usar lenguajes de alto nivel como Python o Java&ldquo;</blockquote>
                 </p>
                 <!-- <p class="card-text click">Cliquea para ver las fotos !!!</p> -->
               </div>
@@ -245,16 +260,17 @@
             <div class="card inscripcion-card">
               <div class="card-body card4">
                 <h5 class="card-title">Taller</h5>
-                <p class="card-text"><blockquote>&ldquo;
+                <p class="card-text">
+                <blockquote>&ldquo;
                   Los alumnos contaran con un espacio para desarrollar diferentes habilidades, como en
-                  Carpinteria, en Soldadura, Hojalateria, Electricidad, Electronica, entre muchas otras 
-                  materias.&ldquo;</blockquote> 
+                  Carpinteria, en Soldadura, Hojalateria, Electricidad, Electronica, entre muchas otras
+                  materias.&ldquo;</blockquote>
                 </p>
                 <!-- <p class="card-text click">Cliquea para ver las fotos !!!</p> -->
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -262,12 +278,13 @@
             <div class="card inscripcion-card">
               <div class="card-body card4">
                 <h5 class="card-title">Programacion Web</h5>
-                <p class="card-text"><blockquote>&ldquo;
+                <p class="card-text">
+                <blockquote>&ldquo;
                   En programacion web los alumnos crearan proyectos reales,
-                  aprenderan a desarrollar habilidades como la estructuracion de una pagina web, 
+                  aprenderan a desarrollar habilidades como la estructuracion de una pagina web,
                   ademas de que aprenderan temas que son demandados por el mercado laboral. Estos
-                  se valdran de herramientas tales como HTML5, CSS, JavaScript, entre otros.&ldquo;</blockquote> 
-                
+                  se valdran de herramientas tales como HTML5, CSS, JavaScript, entre otros.&ldquo;</blockquote>
+
               </div>
             </div>
           </div>
@@ -277,16 +294,17 @@
             <div class="card inscripcion-card">
               <div class="card-body card4">
                 <h5 class="card-title">Laboratorios</h5>
-                <p class="card-text"><blockquote>&ldquo;
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis commodi quibusdam 
-                  sit tempore modi laboriosam voluptatem deleniti sapiente rerum officia adipisci nisi nihil 
-                  culpa alias nobis, maxime ipsum quidem aspernatur!&ldquo;</blockquote> 
-                
+                <p class="card-text">
+                <blockquote>&ldquo;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis commodi quibusdam
+                  sit tempore modi laboriosam voluptatem deleniti sapiente rerum officia adipisci nisi nihil
+                  culpa alias nobis, maxime ipsum quidem aspernatur!&ldquo;</blockquote>
+
                 </p>
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -294,10 +312,11 @@
             <div class="card inscripcion-card">
               <div class="card-body card4">
                 <h5 class="card-title">Programacion sobre Redes</h5>
-                <p class="card-text"><blockquote>&ldquo;
+                <p class="card-text">
+                <blockquote>&ldquo;
                   Los alumnos comprenderan las conexiones de los distintos dispositivos
                   en la red, realizaran simulaciones de conexiones WiFi y LAN a traves de programas tales
-                  como Cisco Packet Tracer.&ldquo;</blockquote> 
+                  como Cisco Packet Tracer.&ldquo;</blockquote>
                 </p>
                 <!-- <p class="card-text click">Cliquea para ver las fotos !!!</p> -->
               </div>
@@ -309,14 +328,15 @@
             <div class="card inscripcion-card">
               <div class="card-body card4">
                 <h5 class="card-title">Laboratorios</h5>
-                <p class="card-text"><blockquote>&ldquo;
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem dolores tempore adipisci 
-                  excepturi magni cum optio et accusantium distinctio!</p>&ldquo;</blockquote> 
-                
+                <p class="card-text">
+                <blockquote>&ldquo;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem dolores tempore adipisci
+                  excepturi magni cum optio et accusantium distinctio!</p>&ldquo;</blockquote>
+
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -324,11 +344,12 @@
             <div class="card inscripcion-card">
               <div class="card-body card4">
                 <h5 class="card-title">Base de Datos</h5>
-                <p class="card-text"><blockquote>&ldquo;
+                <p class="card-text">
+                <blockquote>&ldquo;
                   Los alumnos aprenderan a manipular las bases de datos, las cuales
                   posteriormente podran incluir y complementar a sus distintos proyectos, usaran programas
-                  tales como MySQL.&ldquo;</blockquote> 
-                
+                  tales como MySQL.&ldquo;</blockquote>
+
                 </p>
                 <!-- <p class="card-text click">Cliquea para ver las fotos !!!</p> -->
               </div>
@@ -340,15 +361,16 @@
             <div class="card inscripcion-card">
               <div class="card-body card4">
                 <h5 class="card-title">Laboratorios</h5>
-                <p class="card-text"><blockquote>&ldquo;
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid provident, 
+                <p class="card-text">
+                <blockquote>&ldquo;
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid provident,
                   error veritatis dolorum repudiandae quisquam saepe? Aperiam nesciunt laudantium sint?
-                  &ldquo;</blockquote> 
+                  &ldquo;</blockquote>
                 </p>
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -356,13 +378,14 @@
             <div class="card inscripcion-card">
               <div class="card-body card4">
                 <h5 class="card-title">Analisis de Sistemas</h5>
-                <p class="card-text"><blockquote>&ldquo;
-                  Los alumnos seran dotados de herramientas para estructurar y 
+                <p class="card-text">
+                <blockquote>&ldquo;
+                  Los alumnos seran dotados de herramientas para estructurar y
                   entender la logica detras de los proyectos y sistemas que estos realizen, aprenderan
-                  a organizar sus tiempos, dividir tareas, y usaran programas de administracion como 
-                  Trello, haran diagramas de flujo, entre otras cosas.&ldquo;</blockquote> 
+                  a organizar sus tiempos, dividir tareas, y usaran programas de administracion como
+                  Trello, haran diagramas de flujo, entre otras cosas.&ldquo;</blockquote>
                 </p>
-               
+
               </div>
             </div>
           </div>
@@ -373,21 +396,136 @@
               <div class="card-body card4">
                 <i class='bx bx-desktop'></i>
                 <h5 class="card-title"></h5>
-                <p class="card-text"><blockquote>&ldquo;
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloribus alias voluptatibus? 
+                <p class="card-text">
+                <blockquote>&ldquo;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In doloribus alias voluptatibus?
                   Necessitatibus, fugit distinctio quis incidunt tempore laborum excepturi.
-                  &ldquo;</blockquote> 
+                  &ldquo;</blockquote>
                 </p>
-                
+
               </div>
             </div>
           </div>
-        </div>  
+        </div>
+      </div>
+    </section>
+
+    <section class="proyectos">
+      <h2 class="main-title">PROYECTOS</h2><br><br>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container text-center">
+              <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="proyectos-container nutri-choise">
+                    <h2 class="proyectos-title">Nutri Choise <i class='bx bxs-medal'></i></h2>
+                    <small class="proyectos-descripcion">Nutrichoice es una aplicación que funciona escaneando el código
+                      de barras
+                      de productos en supermercados usando un teléfono, y devuelve todos los datos nutricionales
+                      incluyendo si es vegano,
+                      vegetariano, o sin tacc.</small>
+                    <hr>
+                    <div class="video-container">
+                      <iframe width="80%" height="480" src="https://www.youtube.com/embed/DvDOYWYVcow"
+                        title="Nutri Choice - Video de Presentacion de Proyecto ET36" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container text-center">
+              <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="proyectos-container nutri-choise">
+                    <h2 class="proyectos-title">One Click Mouse</i></h2>
+                    <small class="proyectos-descripcion">El gyromouse funciona por medio de un giroscopio que toma la
+                      rotación de la cabeza,
+                      y esta con ayuda de una librería, ubica el cursor en los ejes x e y.
+                      Con ayuda de un micrófono tomamos los decibelios y dependiendo de la intensidad de estos, se
+                      realiza click izquierdo o derecho.</small>
+                    <hr>
+                    <div class="video-container">
+                      <iframe width="80%" height="480" src="https://www.youtube.com/embed/yjtzx-GRhmU"
+                        title="OneClickMouse 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                      encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container text-center">
+              <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="proyectos-container nutri-choise">
+                    <h2 class="proyectos-title">GyroMouse</i></h2>
+                    <small class="proyectos-descripcion">Nutrichoice es una aplicación que funciona escaneando el código
+                      de barras
+                      de productos en supermercados usando un teléfono, y devuelve todos los datos nutricionales
+                      incluyendo si es vegano,
+                      vegetariano, o sin tacc.</small>
+                    <hr>
+                    <div class="video-container">
+                      <iframe width="80%" height="480" src="https://www.youtube.com/embed/lKyxwCDfDpE"
+                        title="GyroMouse 2022" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container text-center">
+              <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="proyectos-container nutri-choise">
+                    <h2 class="proyectos-title">AquaTech</i></h2>
+                    <small class="proyectos-descripcion">Recolectan el agua de lluvia, la filtran y la almacenan para su
+                      futuro uso.
+                      Fueron ideados para el Polo Educativo Saavedra,
+                      y servirían para el regado y la limpieza del mismo, para así reducir el consumo de agua
+                      potable.</small>
+                    <hr>
+                    <div class="video-container">
+                      <iframe width="80%" height="480" src="https://www.youtube.com/embed/phs4b6lJVsA"
+                        title="Proyecto AquaTech" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                      gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
 
 
     <main>
+      <script>
+        $(document).ready(function() {
+          $("[data-fancybox]").fancybox({
+            toolbar: false
+          });
+        });
+      </script>
+      <script src="app.js"></script>
       <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
