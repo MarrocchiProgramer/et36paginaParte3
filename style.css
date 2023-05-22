@@ -101,6 +101,11 @@ p::selection {
 
 /* termina el header */
 
+/* modal */
+
+
+/* modal */
+
 /* empieza el main */
 
 #main {
@@ -109,8 +114,8 @@ p::selection {
     width: 100vw;
     height: auto;
     border-top: 5px double black;
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.1);
+    /* backdrop-filter: blur(3px); */
     /* ajusta la cantidad que se superponen el header y el main */
 
 }
