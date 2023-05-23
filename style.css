@@ -11,7 +11,7 @@
 #body {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: auto;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -37,7 +37,7 @@ p::selection {
 /* empieza el header */
 
 #header {
-    width: 100vw;
+    width: 100%;
     background-color: rgba(94, 109, 189, 0.8);
     margin-top: 15px;
     box-shadow: black;
@@ -99,6 +99,7 @@ p::selection {
     color: rgb(220, 220, 220) !important;
 }
 
+
 /* termina el header */
 
 /* modal */
@@ -111,7 +112,7 @@ p::selection {
 #main {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: auto;
     border-top: 5px double black;
     background-color: rgba(255, 255, 255, 0.1);
@@ -207,7 +208,7 @@ p::selection {
 
 .sr-only {
     position: absolute;
-    left: -9999px;
+    /* left: -9999px; */
     width: 1px;
     height: 1px;
     overflow: hidden;
@@ -275,7 +276,7 @@ p::selection {
     transform: scale(0.85);
     min-width: 500px;
     object-fit: contain;
-    /* margin-top: 10px; */
+    margin-top: 10px;
     padding: 40px;
     border: 1px solid #999;
     border-radius: 5px;
@@ -298,11 +299,11 @@ p::selection {
         0px 4px 24px 8px rgba(0, 0, 0, 0.24);
 }
 
-.div-esp:hover .esp-text{
+.div-esp:hover .esp-text {
     color: white;
 }
 
-.div-esp:hover .esp-title{
+.div-esp:hover .esp-title {
     color: white;
 }
 
@@ -343,7 +344,7 @@ p::selection {
 .card {
     width: 500px;
     height: 500px;
-    margin: 30px 20px 0px 20px;
+    /* margin: 30px 20px 0px 20px; */
     transform: scale(0.8);
 }
 
@@ -413,7 +414,7 @@ p::selection {
     border-top: 1px solid rgba(0, 0, 0, 0.27);
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 15px;
+    /* padding: 15px; */
     font-weight: bold;
 }
 
@@ -434,9 +435,7 @@ p::selection {
     margin: 20px 0px 40px 0px;
 }
 
-.inscripcion-card {
-    margin-left: 75px;
-}
+
 
 blockquote {
     padding: 0px 10px 0px 10px;
@@ -462,7 +461,7 @@ blockquote p {
 
 /* empieza PROYECTOS */
 
-.proyectos{
+.proyectos {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -473,7 +472,7 @@ blockquote p {
 }
 
 
-.proyectos-container{
+.proyectos-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -492,11 +491,12 @@ blockquote p {
 }
 
 
-.proyectos-title{
+.proyectos-title {
     display: flex;
     justify-content: center;
     margin: 50px 30px 5px 30px;
-    padding: 1rem;;
+    padding: 1rem;
+    ;
     font-size: 60px;
     color: #7E8ACA;
     border: 3px solid #3A5794;
@@ -504,7 +504,7 @@ blockquote p {
     border-radius: 10px;
 }
 
-.proyectos-descripcion{
+.proyectos-descripcion {
     color: #feda75;
     font-size: 20px;
     padding: 15px;
@@ -516,7 +516,7 @@ blockquote p {
     text-align: justify;
 }
 
-.bxs-medal{
+.bxs-medal {
     top: 0;
     left: 0;
 }
