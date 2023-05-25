@@ -50,7 +50,7 @@ p::selection {
 
 
 .header-title {
-    display: inherit;
+    display: flex;
     justify-content: center;
     font-family: 'EB Garamond', serif;
     font-weight: bold;
@@ -102,10 +102,6 @@ p::selection {
 
 /* termina el header */
 
-/* modal */
-
-
-/* modal */
 
 /* empieza el main */
 
@@ -139,7 +135,7 @@ p::selection {
 .main-text-container {
     display: flex;
     flex-direction: column;
-    margin: 100px 0px 150px 0px;
+    justify-content: center;
 }
 
 .main-img-text {
@@ -363,38 +359,6 @@ p::selection {
     animation: flicker 1s infinite alternate;
 }
 
-.card1:hover {
-    background-color: rgb(156, 189, 232);
-    box-shadow:
-        0px 8px 16px -4px rgba(0, 0, 0, 0.4),
-        0px 8px 32px 0px rgba(0, 0, 0, 0.28),
-        0px 4px 24px 8px rgba(0, 0, 0, 0.24);
-}
-
-.card2:hover {
-    background-color: rgb(189, 238, 170);
-    box-shadow:
-        0px 8px 16px -4px rgba(0, 0, 0, 0.4),
-        0px 8px 32px 0px rgba(0, 0, 0, 0.28),
-        0px 4px 24px 8px rgba(0, 0, 0, 0.24);
-}
-
-.card3:hover {
-    background-color: rgb(198, 160, 232);
-    box-shadow:
-        0px 8px 16px -4px rgba(0, 0, 0, 0.4),
-        0px 8px 32px 0px rgba(0, 0, 0, 0.28),
-        0px 4px 24px 8px rgba(0, 0, 0, 0.24);
-}
-
-.card4:hover {
-    background-color: rgb(247, 255, 164);
-    box-shadow:
-        0px 8px 16px -4px rgba(0, 0, 0, 0.4),
-        0px 8px 32px 0px rgba(0, 0, 0, 0.28),
-        0px 4px 24px 8px rgba(0, 0, 0, 0.24);
-}
-
 .card:hover {
     cursor: pointer;
 }
@@ -416,8 +380,55 @@ p::selection {
     text-overflow: ellipsis;
     /* padding: 15px; */
     font-weight: bold;
+    padding: 10px;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+.modal-header {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+
+.card1 {
+    background-color: white;
+    transition: background-color 0.3s;
+}
+
+.boton-verFotos {
+    padding: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(156, 189, 232);
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card1:hover {
+    background-color: rgb(156, 189, 232);
+    box-shadow:
+        0px 8px 16px -4px rgba(0, 0, 0, 0.4),
+        0px 8px 32px 0px rgba(0, 0, 0, 0.28),
+        0px 4px 24px 8px rgba(0, 0, 0, 0.24);
+}
+
+.card1:hover .boton-verFotos {
+    background-color: white;
+    color: rgb(156, 189, 232);
+    transform: scale(1.05);
+}
+
+.modal-content {
+    background-color: rgb(200, 216, 237) !important;
+}
+
+.btn-close{
+    transform: scale(1.5);
+}
 
 
 /* termina INSTALACIONES */
