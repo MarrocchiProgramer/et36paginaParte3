@@ -8,13 +8,8 @@
 }
 
 
-#body {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: auto;
+body {
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 h1::selection,
@@ -115,6 +110,15 @@ p::selection {
     /* backdrop-filter: blur(3px); */
     /* ajusta la cantidad que se superponen el header y el main */
 
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-bottom: 40px;
 }
 
 .main-img {
@@ -241,6 +245,7 @@ p::selection {
 }
 
 
+
 /* empieza ESPECIALIDADES */
 
 .especialidades {
@@ -270,7 +275,6 @@ p::selection {
     height: 800px;
     width: 600px;
     transform: scale(0.85);
-    min-width: 500px;
     object-fit: contain;
     margin-top: 10px;
     padding: 40px;
@@ -284,6 +288,7 @@ p::selection {
     transition: box-shadow 0.3s ease-in-out;
     background-color: rgb(222, 224, 228);
 }
+
 
 .div-esp:hover {
     background-color: rgb(140, 179, 230);
@@ -393,7 +398,7 @@ p::selection {
     padding-bottom: 0 !important;
 }
 
-.card1 {
+.card-instalaciones {
     background-color: white;
     transition: background-color 0.3s;
 }
@@ -408,7 +413,7 @@ p::selection {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.card1:hover {
+.card-instalaciones:hover {
     background-color: rgb(156, 189, 232);
     box-shadow:
         0px 8px 16px -4px rgba(0, 0, 0, 0.4),
@@ -416,7 +421,7 @@ p::selection {
         0px 4px 24px 8px rgba(0, 0, 0, 0.24);
 }
 
-.card1:hover .boton-verFotos {
+.card-instalaciones:hover .boton-verFotos {
     background-color: white;
     color: rgb(156, 189, 232);
     transform: scale(1.05);
@@ -426,7 +431,7 @@ p::selection {
     background-color: rgb(200, 216, 237) !important;
 }
 
-.btn-close{
+.btn-close {
     transform: scale(1.5);
 }
 
@@ -450,7 +455,7 @@ p::selection {
 
 blockquote {
     padding: 0px 10px 0px 10px;
-    border-left: 5px solid #ccc;
+    border-left: 5px solid rgb(156, 189, 232);
     font-style: italic;
 }
 
@@ -462,6 +467,68 @@ blockquote p {
 }
 
 
+.carousel-container {
+    position: relative;
+    border-radius: 10px;
+    margin: 50px;
+        box-shadow:
+        0px 8px 16px -4px rgba(156, 189, 232, 0.4),
+        0px 8px 32px 0px rgba(156, 189, 232, 0.28),
+        0px 4px 24px 8px rgba(156, 189, 232, 0.24);
+}
+
+.carousel-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(0.5) grayscale(1.5);
+    background-image: url(/img/computacion.jpg);
+    background-position: -50px center;
+    border-radius: inherit;
+}
+
+.titulo-card-materias {
+    top: 0;
+    font-family: 'Roboto', monospace;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    color: rgba(94, 109, 189, 0.8);
+    background-color: rgba(255, 255, 255,0.5);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-materias {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+.carousel-item:not(.active) .card {
+    transform: scale(0.7);
+    opacity: 0.7;
+}
+
+.carousel-item-next:not(.active) .card-materias,
+.carousel-item-prev:not(.active) .card-materias {
+    transform: scale(0.75);
+    opacity: 0.8;
+}
+
+.carousel-item.active .card-materias {
+    background-color: rgb(156, 189, 232);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 
 /* termina MATERIAS */
@@ -527,10 +594,7 @@ blockquote p {
     text-align: justify;
 }
 
-.bxs-medal {
-    top: 0;
-    left: 0;
-}
+
 
 
 /* termina PROYECTOS */

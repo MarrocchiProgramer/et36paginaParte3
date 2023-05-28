@@ -5,3 +5,4 @@ function toggleCardButtonColors() {
     card.classList.toggle('card-hover');
     button.classList.toggle('boton-hover');
 }
+
