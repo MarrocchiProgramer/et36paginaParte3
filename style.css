@@ -453,25 +453,11 @@ p::selection {
 
 
 
-blockquote {
-    padding: 0px 10px 0px 10px;
-    border-left: 5px solid rgb(156, 189, 232);
-    font-style: italic;
-}
-
-blockquote p {
-    margin: 0;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-weight: bold;
-}
-
-
 .carousel-container {
     position: relative;
     border-radius: 10px;
     margin: 50px;
-        box-shadow:
+    box-shadow:
         0px 8px 16px -4px rgba(156, 189, 232, 0.4),
         0px 8px 32px 0px rgba(156, 189, 232, 0.28),
         0px 4px 24px 8px rgba(156, 189, 232, 0.24);
@@ -494,15 +480,14 @@ blockquote p {
 .titulo-card-materias {
     top: 0;
     font-family: 'Roboto', monospace;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     font-weight: 600;
     color: rgba(94, 109, 189, 0.8);
-    background-color: rgba(255, 255, 255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
     margin-bottom: 10px;
-    font-size: 50px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
 }
 
 .card-materias {
@@ -528,6 +513,73 @@ blockquote p {
 .carousel-item.active .card-materias {
     background-color: rgb(156, 189, 232);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.tarjetas-container {
+    display: flex;
+    width: 900px;
+    height: 430px;
+}
+
+.tarjetas-container .tarjetas {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 0;
+    flex-grow: 2;
+    object-fit: cover;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    opacity: .8;
+    transition: .5s ease;
+    padding: 10px;
+    background-image: url(/img/computacion.jpg);
+}
+
+
+.tarjetas-container .tarjetas:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+.truncate-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    /* Número de líneas que deseas mostrar antes de truncar */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.truncate-text:hover {
+    -webkit-line-clamp: unset;
+    /* Muestra todo el texto en el hover */
+}
+
+.tarjetas:first-child {
+    background-color: #3A5794;
+    opacity: 1;
+}
+
+.tarjetas:nth-child(2) {
+    background-color: #962fbf;
+}
+
+.tarjetas:nth-child(3) {
+    background-color: #3d4323;
+}
+
+.tarjetas:nth-child(4) {
+    background-color: #b33458;
+}
+
+.tarjetas:nth-child(5) {
+    background-color: #dac463;
 }
 
 
