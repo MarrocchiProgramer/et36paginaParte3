@@ -453,41 +453,35 @@ p::selection {
 
 
 
-.carousel-container {
-    position: relative;
-    border-radius: 10px;
-    margin: 50px;
-    box-shadow:
-        0px 8px 16px -4px rgba(156, 189, 232, 0.4),
-        0px 8px 32px 0px rgba(156, 189, 232, 0.28),
-        0px 4px 24px 8px rgba(156, 189, 232, 0.24);
-}
-
-.carousel-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    filter: brightness(0.5) grayscale(1.5);
-    background-image: url(/img/computacion.jpg);
-    background-position: -50px center;
-    border-radius: inherit;
-}
-
 .titulo-card-materias {
+    font-size: 30px;
     top: 0;
     font-family: 'Roboto', monospace;
     font-weight: 600;
-    color: rgba(94, 109, 189, 0.8);
-    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8) ;
+    background-color:rgba(94, 109, 189, 0.7);
     padding: 10px;
     margin-bottom: 10px;
-    border-radius: 10px;
     overflow: hidden;
     text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.titulo-card-materias::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(94, 109, 189, 0.8);
+    transition: width 0.5s ease;
+}
+
+.tarjetas-container .tarjetas:hover .titulo-card-materias::before {
+    width: 100%;
 }
 
 .card-materias {
@@ -499,22 +493,6 @@ p::selection {
     margin: 20px;
 }
 
-.carousel-item:not(.active) .card {
-    transform: scale(0.7);
-    opacity: 0.7;
-}
-
-.carousel-item-next:not(.active) .card-materias,
-.carousel-item-prev:not(.active) .card-materias {
-    transform: scale(0.75);
-    opacity: 0.8;
-}
-
-.carousel-item.active .card-materias {
-    background-color: rgb(156, 189, 232);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 
 .tarjetas-container {
     display: flex;
@@ -522,22 +500,22 @@ p::selection {
     height: 430px;
 }
 
+
+
 .tarjetas-container .tarjetas {
+    position: relative;
+    box-sizing: content-box;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 0;
-    flex-grow: 2;
+    flex-grow: 1;
     object-fit: cover;
-    text-overflow: ellipsis;
     overflow: hidden;
     opacity: .8;
     transition: .5s ease;
-    padding: 10px;
-    background-image: url(/img/computacion.jpg);
 }
-
 
 .tarjetas-container .tarjetas:hover {
     cursor: crosshair;
@@ -546,40 +524,68 @@ p::selection {
     filter: contrast(120%);
 }
 
+.tarjetas-container .tarjetas .imagen {
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.tarjetas-container .tarjetas .imagen img {
+    object-fit: cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.tarjetas-container .tarjetas:hover .imagen img {
+    filter: grayscale(0%);
+}
+
 
 .truncate-text {
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    border: 1px solid #999;
+    background-color: rgba(94, 109, 189, 0.7);
+    letter-spacing: 2px;
+    overflow: hidden;
+    text-align: start;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 10;
     /* Número de líneas que deseas mostrar antes de truncar */
     overflow: hidden;
     text-overflow: ellipsis;
+    position: relative;
 }
+
+.truncate-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(94, 109, 189, 0.8);
+    transition: width 0.41s ease-in;
+    z-index: -1;
+  }
+  
+  .tarjetas-container .tarjetas:hover .truncate-text::before {
+    width: 100%;
+    transition: width 0.8s ease-out;
+  }
 
 .truncate-text:hover {
     -webkit-line-clamp: unset;
     /* Muestra todo el texto en el hover */
-}
-
-.tarjetas:first-child {
-    background-color: #3A5794;
-    opacity: 1;
-}
-
-.tarjetas:nth-child(2) {
-    background-color: #962fbf;
-}
-
-.tarjetas:nth-child(3) {
-    background-color: #3d4323;
-}
-
-.tarjetas:nth-child(4) {
-    background-color: #b33458;
-}
-
-.tarjetas:nth-child(5) {
-    background-color: #dac463;
 }
 
 
