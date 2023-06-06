@@ -575,9 +575,15 @@ p::selection {
 
 @media (min-width:500px) {
     .tranding-slide {
+        filter: grayscale(100%) blur(1.5px); /* Aplica escala de grises a todas las tarjetas */
+        transition: filter 0.5s ease-in-out; /* Transición suave para el efecto */
         width: 28rem !important;
         height: 36rem !important;
     }
+
+    .tranding-slide.active {
+        filter: none; /* Restaura el color de la tarjeta activa */
+      }
 
     .tranding-slide .tranding-slide-img img {
         width: 28rem !important;
@@ -714,7 +720,9 @@ p::selection {
 }
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
-    background: var(--primary);
+    border: 1px solid rgba(255, 0, 0, 0.8);
+    background: rgb(183, 210, 30);
+    
 }
 
 

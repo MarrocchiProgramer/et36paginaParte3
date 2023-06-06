@@ -33,7 +33,49 @@ function toggleCardButtonColors() {
 // updateCardSizes();
 
 
-var TrandingSlider = new Swiper('.tranding-slider', {
+// var TrandingSlider = new Swiper('.tranding-slider', {
+//     // Opciones del Swiper
+
+//     on: {
+//       slideChange: function () {
+//         // Obtén todas las tarjetas
+//         var slides = document.getElementsByClassName('tranding-slide');
+
+//         // Elimina la clase 'active' de todas las tarjetas
+//         for (var i = 0; i < slides.length; i++) {
+//           slides[i].classList.remove('active');
+//         }
+
+//         // Agrega la clase 'active' a la tarjeta actualmente visible en el medio
+//         slides[this.activeIndex].classList.add('active');
+//       },
+//     },
+//   });
+
+var topSlider = new Swiper('.top-slider', {
+    on: {
+        slideChangeTransitionEnd: function () {
+            var activeIndex = this.activeIndex;
+
+            // Remover la clase active de todas las tarjetas del top-slider
+            var topSliderCards = document.querySelectorAll('.top-slider .swiper-slide');
+            topSliderCards.forEach(function (card) {
+                card.classList.remove('active');
+            });
+
+            // Agregar la clase active a la tarjeta correspondiente en el top-slider
+            var activeCard = topSliderCards[activeIndex];
+            activeCard.classList.add('active');
+        }
+    },
+    on: {
+        transitionEnd: function () {
+            updateActiveCard(this, '.top-slider');
+        },
+        touchEnd: function () {
+            updateActiveCard(this, '.top-slider');
+        }
+    },
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
@@ -55,7 +97,71 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     }
 });
 
+var bottomSlider = new Swiper('.bottom-slider', {
+    on: {
+        slideChange: function () {
+            // Obtén todas las tarjetas de ambos conjuntos
+            var slides = document.querySelectorAll('.tranding-slider .tranding-slide');
 
+            // Elimina la clase 'active' de todas las tarjetas
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+
+            // Agrega la clase 'active' a la tarjeta actualmente visible en el medio del primer conjunto
+            slides[this.activeIndex].classList.add('active');
+
+            // Calcula el índice correspondiente para el segundo conjunto
+            var secondIndex = this.activeIndex + slides.length / 2;
+
+            // Agrega la clase 'active' a la tarjeta correspondiente del segundo conjunto
+            slides[secondIndex].classList.add('active');
+        },
+    },
+    on: {
+        transitionEnd: function () {
+            updateActiveCard(this, '.bottom-slider');
+        },
+        touchEnd: function () {
+            updateActiveCard(this, '.bottom-slider');
+        }
+    },
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 5,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
+
+function updateActiveCard(swiper, sliderSelector) {
+    var sliderWidth = swiper.width; // Ancho del carrusel
+    var slides = swiper.slides; // Slides del carrusel
+    var activeIndex = swiper.activeIndex; // Índice del slide activo
+  
+    // Remover la clase active de todas las tarjetas
+    var sliderCards = document.querySelectorAll(sliderSelector + ' .swiper-slide');
+    sliderCards.forEach(function(card) {
+      card.classList.remove('active');
+    });
+  
+    // Agregar la clase active al slide actual
+    var activeCard = slides[activeIndex];
+    activeCard.classList.add('active');
+  }
 
 const sliderPrev = document.getElementById('slider-prev');
 const sliderNext = document.getElementById('slider-next');
